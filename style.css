@@ -4,8 +4,15 @@ body{
   flex-grow: 1;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  margin-top: -3;
+}
 .bg{
-  background-image: url("guitar-3.jpeg");
+  background-image: url("guitar-4.jpg");
   min-height: 100%;
   background-position: center;
   padding: 0;
@@ -37,7 +44,7 @@ body{
   padding: 2%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 992px) {
   .spill-out {
     position: absolute;
     top: 2%;
@@ -48,10 +55,57 @@ body{
 
 }
 
+@media only screen and (max-width: 1199px){
+  .remove-text{
+    display: none;
+  }
+}
+@media only screen and (min-width: 1199px){
+  .hide-icon{
+    display: none;
+  }
+}
+@media only screen and (max-width: 1445px) {
+.card-margin-lg{
+  margin-top: 1%;
+ }
+}
+
+@media only screen and (min-width: 1199px) and (max-width: 1300px)
+{
+  .lg-screen-pad{
+    padding-top: 3em;
+    margin-top:  3em;
+  }
+}
+
+
 .heading-font{
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Averia Libre', cursive;
 }
 
 .icon-color{
-color: rgb(81, 81, 148);
+color: rgb(81, 102, 148);
+}
+
+.btn-color{
+  background: rgb(81, 102, 148);
+  border-radius: 5%;
+}
+
+
+
+@media only screen and (max-width: 1199px){
+  .sm-col{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: xx-small;
+  }
+}
+
+.white-bar{
+  border-left: solid;
+  border-color: white;
+  border-width: 5px;
 }
